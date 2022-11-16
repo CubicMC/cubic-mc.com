@@ -77,7 +77,6 @@ body.section-page {
 .fs-cubic-mc {
 	padding: 10vh 10vw;
 	overflow:hidden;
-	position: absolute;
 	z-index: 1000;
 
 	@media (max-width: $bp-mobile ) {
@@ -91,7 +90,7 @@ body.section-page {
   		flex-direction: column;
 
 		@media (max-width: $bp-mobile ) {
-			height: 90vh; // as padding now 5vh 5vw
+			height: 90vh;
 		}	
 
 	}
@@ -105,8 +104,9 @@ body.section-page {
 .logo { 
 		flex: 1 1 auto;
 		display: flex;
-		flex-direction: column;
-		align-self: left;
+		flex-direction: row;
+		align-self: center;
+		align-items: center;
 		animation: fadein 2s;
 
 		@media (max-width: $bp-mobile ) {
@@ -114,7 +114,7 @@ body.section-page {
 		}
 
 	img {
-		max-width: 165px;
+		max-width: 15vw;
 		height: auto;
 	}
 
