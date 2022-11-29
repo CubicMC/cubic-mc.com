@@ -26,7 +26,15 @@
 
     <body id="fullsingle" class="section-page">
         <div class="fs-cubic-mc">
-            <div class="page-content">
+            <div class="nav-bar">
+                <button onclick="document.getElementById('home').scrollIntoView({ behavior: 'smooth' });">HOME</button>
+                <button onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' });">ABOUT</button>
+                <button onclick="document.getElementById('release').scrollIntoView({ behavior: 'smooth' });">NEXT RELEASE</button>
+                <button onclick="document.getElementById('who-we-are').scrollIntoView({ behavior: 'smooth' });">WHO WE ARE</button>
+                <button onclick="document.getElementById('news-blog').scrollIntoView({ behavior: 'smooth' });">NEWS</button>
+                <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">CONTACT</button>
+            </div>
+            <div class="page-content" id="home">
                 <div class="bg-image" style="background-image: url(images/bckg1.png);"></div>
                 <div class="logo">
                     <p>CUBIC</p>
@@ -34,7 +42,7 @@
                     <p>SERVER</p>
                 </div>
             </div>
-            <div class="page-content">
+            <div class="page-content" id="about">
                 <div class="bg-image" style="background-image: url(images/logo.png);"></div>
                 <div class="about">
                     <h1>About Cubic Server</h1>
@@ -47,7 +55,7 @@
                     </div>
                 </div>
             </div>
-            <div class="page-content">
+            <div class="page-content" id="release">
                 <div class="bg-image" style="background-image: url(images/bckg1.png);"></div>
                 <div class="release">
                     <h1>Next Release</h1>
@@ -65,36 +73,76 @@
                     </div>
                 </div>
             </div>
-            <div class="page-content">
+            <div class="page-content" id="who-we-are">
                 <div class="bg-image" style="background-image: url(images/logo.png);"></div>
                 <div class="who-we-are">
                     <h1>Who we are</h1>
-                        <div class="box-desc">
+                    <div class="box-desc">
                         <div class="profiles">
-                            <div class="cs-member">huntears</div>
-                            <div class="cs-member">Trompettesib</div>
-                            <div class="cs-member">NekoSelena</div>
-                            <div class="cs-member">STMiki</div>
-                            <div class="cs-member">Thomas-Harit</div>
-                            <div class="cs-member">LEVRAIBHL</div>
+                            <div class="cs-member">
+                                <button class="cs-member-pp" style="background-image: url('https://avatars.githubusercontent.com/u/44233177?v=4');"></button>
+                                <div class="cs-member-pseudo">huntears</div>
+                            </div>
+                            <div class="cs-member">
+                                <button class="cs-member-pp" style="background-image: url('https://avatars.githubusercontent.com/u/60519602?v=4');"></button>
+                                <div class="cs-member-pseudo">Trompettesib</div>
+                            </div>
+                            <div class="cs-member">
+                                <button class="cs-member-pp" style="background-image: url('https://avatars.githubusercontent.com/u/62648027?v=4');"></button>
+                                <div class="cs-member-pseudo">NekoSelena</div>
+                            </div>
+                            <div class="cs-member">
+                                <button class="cs-member-pp" style="background-image: url('https://avatars.githubusercontent.com/u/23247773?v=4');"></button>
+                                <div class="cs-member-pseudo">STMiki</div>
+                            </div>
+                            <div class="cs-member">
+                                <button class="cs-member-pp" style="background-image: url('https://avatars.githubusercontent.com/u/62348529?v=4');"></button>
+                                <div class="cs-member-pseudo">Thomas-Harit</div>
+                            </div>
+                            <div class="cs-member">
+                                <button class="cs-member-pp" style="background-image: url('https://avatars.githubusercontent.com/u/64283988?v=4');"></button>
+                                <div class="cs-member-pseudo">LEVRAIBHL</div>
+                            </div>
                         </div>
                         <div class="textbox-special">
-                            <p>Description here</p>
+                            <p class="cs-member-desc">Click on someone profile picture to read a bit about us!</p>
                         </div>
-                        <div class="textbox">
-                            <p>GitHub repository here</p>
-                            <button onclick="location.href = 'https\:\/\/github.com/CubicMC/cubic-server'">Go to the GitHub</button>
+                        <div class="textbox-github">
+                            <div class="github-name">
+                                <div class="icon-github"></div>
+                                cubic-server
+                                <div class="public-tag">public</div>
+                            </div>
+                            <p class="github-desc">A fast and extensible C++ implementation of Minecraft's server.</p>
+                            <div class="lang-github">
+                                <div class="lang-dot"></div>
+                                <p style="line-height: 0.8vw;">C++</p>
+                            </div>
+                            <button class="github-btn" onclick="location.href = 'https\:\/\/github.com/CubicMC'">GitHub Organization</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="page-content">
+            <div class="page-content" id="news-blog">
                 <div class="bg-image" style="background-image: url(images/bckg1.png);"></div>
                 <div class="news-blog">
                     <h1>News and Blog</h1>
                         <div class="box-desc">
                         <div class="textbox">
                             <p>Text</p>
+                            <button>Label</button>
+                        </div>
+                        <div class="textbox">
+                            <p>Text</p>
+                            <button>Label</button>
+                        </div>
+                        <div class="textbox">
+                            <p>Text</p>
+                            <button>Label</button>
+                        </div>
+                        <div class="textbox">
+                            <p>Text</p>
+                            <button>Label</button>
                         </div>
                     </div>
                 </div>
@@ -102,7 +150,7 @@
         </div>
     </body>
 
-    <footer class="credit">
+    <footer class="credit" id="contact">
         <h3>Contact us</h3>
         <p class="contact">
             Email : <a href="mailto:contact@cubic-server.com">contact@cubic-server.com</a></br>GitHub Organization : <a href="https://github.com/CubicMC">CubicMC</a></p>

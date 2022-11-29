@@ -144,6 +144,12 @@ a:hover {
   to {
     opacity: 1; } }
 
+@keyframes nav-hover {
+    from {
+        color: #a5a5a5 }
+    to {
+        color: #fff; } }
+
 html {
   background-color: #141414; }
 
@@ -162,10 +168,54 @@ body.section-page {
     color: #FFFFFF;
     line-height: 1.3; }
 
+.nav-bar {
+    position: fixed;
+    z-index: 1001;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+            flex: 1 1 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    gap: 2vw;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+            flex-direction: row;
+    -webkit-align-self: center;
+            align-self: center;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-justify-content: space-evenly;
+            justify-content: space-evenly;
+    background-color: rgb(30,30,30); /* Fallback color */
+    background-color: rgba(30,30,30, 0.5);
+    border: 1px solid #000;
+    padding: 5vh 1vw 5vh;
+    width: 100vw;
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25); 
+}
+  .nav-bar button {
+    background-color: #00000000 !important;
+    border: none !important;
+    box-shadow: none !important;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 1.6vw;
+    padding: 0;
+    color: #a5a5a5;
+  }
+  .nav-bar button:focus, .nav-bar button:hover {
+    text-decoration: underline;
+    color: #FFFFFF;
+    -webkit-animation: nav-hover 0.5s;
+            animation: nav-hover 0.5s;
+  }
+
 .fs-cubic-mc {
   overflow: hidden;
   text-align: center;
-  z-index: 1000; }
+  z-index: 100; }
   .fs-cubic-mc .page-content {
     height: 100vh;
     width: auto;
@@ -345,6 +395,24 @@ body.section-page {
     -webkit-align-items: center;
             align-items: center;
     width: 80%; }
+    .who-we-are .box-desc {
+      display: flex;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1 auto;
+              flex: 1 1 auto;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+              justify-content: center;
+      -webkit-align-self: center;
+              align-self: center;
+      -webkit-align-items: center;
+              align-items: center;
+      gap: 2vw;
+    }
     .who-we-are .box-desc .profiles {
       display: flex;
       -webkit-box-flex: 1;
@@ -387,7 +455,162 @@ body.section-page {
       z-index: 2;
       padding: 3vh 3vw 3vh;
       text-align: center;
-      box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25); 
+      box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+      font-size: 1vw;
+    }
+    .who-we-are .cs-member {
+        display: flex;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 auto;
+                flex: 1 1 auto;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+                justify-content: center;
+        -webkit-align-self: center;
+                align-self: center;
+        -webkit-align-items: center;
+                align-items: center;
+        gap: 1.5vw;
+    }
+    .who-we-are .cs-member .cs-member-pp {
+        background-color: #00000000;
+        color: inherit;
+        width: 5vw;
+        height: 5vw;
+        background-size: 5vw;
+        border: 1px solid #000;
+        border-radius: 100px;
+        box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+        box-shadow: inset 0 0 0 1000px rgba(30, 30, 30,.8);
+    }
+    .who-we-are .cs-member .cs-member-pp:hover {
+        width: 5vw;
+        height: 5vw;
+        background-size: 5vw;
+        border: 1px solid #000;
+        border-radius: 100px;
+        box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+    }
+    .who-we-are .cs-member .cs-member-pp:focus {
+        width: 5vw;
+        height: 5vw;
+        background-size: 5vw;
+        border: 1px solid #000;
+        border-radius: 100px;
+        box-shadow: 0px 0px 1.5vw #0acf0acc;
+    }
+    .who-we-are .cs-member .cs-member-pseudo {
+        background-color: rgb(30,30,30); /* Fallback color */
+        background-color: rgba(30,30,30, 0.5);
+        border: 1px solid #000;
+        border-radius: 44px;
+        z-index: 2;
+        padding: 1.5vh 1.5vw 1.5vh;
+        text-align: center;
+        box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+        font-size: 0.8vw;
+    }
+    .who-we-are .box-desc .textbox-github {
+        position: relative;
+      display: flex;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1 auto;
+              flex: 1 1 auto;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+              justify-content: center;
+      -webkit-align-self: center;
+              align-self: center;
+      -webkit-align-items: start;
+              align-items: flex-start;
+      gap: 1.5vw;
+      background-color: rgb(30,30,30); /* Fallback color */
+      background-color: rgba(30,30,30, 0.5);
+      border: 1px solid #000;
+      border-radius: 54px;
+      z-index: 2;
+      padding: 3vh 2vw 3vh;
+      text-align: left;
+      box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+    }
+    .who-we-are .github-name {
+      display: flex;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1 auto;
+              flex: 1 1 auto;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+              justify-content: center;
+      -webkit-align-items: center;
+              align-items: center;
+      gap: 1vw;
+      font-size: 1.1vw;
+      font-weight: 600;
+    }
+    .lang-github {
+        display: flex;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 auto;
+                flex: 1 1 auto;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+                justify-content: center;
+        -webkit-align-items: center;
+                align-items: center;
+        gap: 0.5vw;
+      }
+    .who-we-are .public-tag {
+      background-color: rgb(30,30,30); /* Fallback color */
+      background-color: rgba(30,30,30, 0.5);
+      border: 1px solid #000;
+      border-radius: 44px;
+      text-align: center;
+      font-size: 0.7vw;
+      font-weight: 300 !important;
+      padding: 0.9vh 0.9vw 0.9vh;
+      box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+    }
+    .who-we-are .github-desc, .lang-github {
+      font-size: 0.8vw;
+    }
+    .who-we-are .icon-github {
+        width: 1vw;
+        height: 1.3vw;
+        background-size: 1vw;
+        background-repeat: no-repeat;
+        background-image: url("../../images/icon-repo.png");
+    }
+    .who-we-are .lang-dot {
+        background-color: #0ACF0A;
+        width: 0.8vw;
+        height: 0.8vw;
+        border-radius: 100%;
+    }
+    .who-we-are .github-btn {
+        display: flex;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 auto;
+                flex: 1 1 auto;
+        -webkit-align-self: center;
+                align-self: center;
+        position: absolute;
+        bottom: -3vh;
     }
 
 .news-blog {
