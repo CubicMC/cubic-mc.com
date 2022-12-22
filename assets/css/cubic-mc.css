@@ -1,0 +1,692 @@
+/* -- CSS Reset -- */
+@import url("https://fonts.googleapis.com/css?family=Oxanium");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -moz-font-feature-settings: "liga" on;
+  font-feature-settings: "liga" on;
+  margin: 0; }
+
+img.alignright {
+  float: right; }
+
+img.alignleft {
+  float: left; }
+
+img.aligncenter {
+  clear: both;
+  display: block;
+  margin-right: auto;
+  margin-left: auto; }
+
+body {
+  background-color: #FFFFFF;
+  border-style: none; }
+
+button {
+  background-color: #0ACF0A;
+  color: inherit;
+  border-radius: 3.5vh;
+  border: 0;
+  padding: 2vh 2vw;
+  width: fit-content;
+  font-weight: 600;
+  -webkit-box-shadow: inset -5px -5px 12px rgba(0, 0, 0, 0.25), inset 6px 6px 12px #61F461, 0px 4px 2px rgba(0, 0, 0, 0.25);
+  box-shadow: inset -5px -5px 12px rgba(0, 0, 0, 0.25), inset 6px 6px 12px #61F461, 0px 4px 2px rgba(0, 0, 0, 0.25); }
+
+h1 {
+  color: #FFFFFF;
+  font-size: 4vw;
+  font-weight: 600; }
+
+h2 {
+  color: #FFFFFF;
+  font-size: 2vw;
+  font-weight: 600; }
+
+h3 {
+  color: #FFFFFF;
+  font-size: 1.5vw;
+  font-weight: 500; }
+
+.textbox {
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-self: center;
+          align-self: center;
+  -webkit-align-items: center;
+          align-items: center;
+  gap: 3vw;
+  background-color: rgb(30,30,30); /* Fallback color */
+  background-color: rgba(30,30,30, 0.5);
+  border: 1px solid #000;
+  border-radius: 44px;
+  z-index: 2;
+  padding: 5vh 5vw 2vh;
+  text-align: center;
+  box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25); 
+}
+
+body,
+p,
+a,
+a:hover {
+  color: #fff; }
+
+a,
+a:hover {
+  text-decoration: none;
+  border: none;
+  border-style: none;
+  box-shadow: none; }
+
+/* -- Content -- */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes nav-hover {
+    from {
+        color: #a5a5a5 }
+    to {
+        color: #fff; } }
+
+html {
+  background-color: #141414; }
+
+body.section-page {
+  height: 100vh;
+  background-color: #141414;
+  font-family: 'Oxanium', sans-serif;
+  font-weight: 400;
+  font-size: 1.15vw;
+  line-height: 1;
+  color: #FFFFFF;
+  background-image: url("../../images/background.jpg");
+  background-position: center center;
+  background-size: cover; }
+  body.section-page p {
+    color: #FFFFFF;
+    line-height: 1.3; }
+
+.nav-bar {
+    position: fixed;
+    z-index: 1001;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+            flex: 1 1 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    gap: 2vw;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+            flex-direction: row;
+    -webkit-align-self: center;
+            align-self: center;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-justify-content: space-evenly;
+            justify-content: space-evenly;
+    background-color: rgb(30,30,30); /* Fallback color */
+    background-color: rgba(30,30,30, 0.5);
+    border: 1px solid #000;
+    padding: 5vh 1vw 5vh;
+    width: 100vw;
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25); 
+}
+  .nav-bar button {
+    background-color: #00000000 !important;
+    border: none !important;
+    box-shadow: none !important;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 1.6vw;
+    padding: 0;
+    color: #a5a5a5;
+  }
+  .nav-bar button:focus, .nav-bar button:hover {
+    text-decoration: underline;
+    color: #FFFFFF;
+    -webkit-animation: nav-hover 0.5s;
+            animation: nav-hover 0.5s;
+  }
+
+.fs-cubic-mc {
+  overflow: hidden;
+  text-align: center;
+  z-index: 100; }
+  .fs-cubic-mc .page-content {
+    height: 100vh;
+    width: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column; }
+    .fs-cubic-mc .page-content .bg-image {
+      height: 100vh;
+      width: auto;
+      box-shadow: inset 0 0 0 1000px rgba(30, 30, 30,.4);
+
+      /* Add the blur effect */
+      filter: blur(8px);
+      -webkit-filter: blur(8px);
+
+      /* Center and scale the image nicely */
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 170vw;
+    }
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  gap: 2vw;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+          flex-direction: row;
+  -webkit-align-self: center;
+          align-self: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-animation: fadein 2s;
+          animation: fadein 2s; }
+  @media (max-width: 100vw) {
+    .logo {
+      -webkit-align-self: center;
+              align-self: center; } }
+  .logo img {
+    max-width: 15vw;
+    max-height: 20vw;
+    width: auto;
+    height: auto; }
+  .logo p {
+    margin-bottom: 0;
+    margin-top: 5vw;
+    font-size: 5vw; }
+
+.about {
+  width: 60vw;
+  position: absolute;
+  top: 160%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  gap: 4vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-self: center;
+          align-self: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-animation: fadein 4s;
+          animation: fadein 4s; }
+  .about .box-desc {
+    width: 80%; }
+
+.release {
+  width: 80vw;
+  position: absolute;
+  top: 260%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: flex;
+  gap: 4vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-self: center;
+          align-self: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-animation: fadein 4s;
+          animation: fadein 4s; }
+  .release .box-desc {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+            flex: 1 1 auto;
+    display: flex;
+    gap: 3vw;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-align-self: center;
+            align-self: center;
+    -webkit-align-items: center;
+            align-items: center;
+    width: 80%; }
+    .release .box-desc .textbox p {
+      font-size: 4vw;
+      font-weight: 600;
+    }
+
+.who-we-are {
+  width: 80vw;
+  position: absolute;
+  top: 360%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: flex;
+  gap: 4vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-self: center;
+          align-self: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-animation: fadein 4s;
+          animation: fadein 4s; }
+  .who-we-are .box-desc {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+            flex: 1 1 auto;
+    display: flex;
+    gap: 3vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-align-self: center;
+            align-self: center;
+    -webkit-align-items: center;
+            align-items: center;
+    width: 80%; }
+    .who-we-are .box-desc {
+      display: flex;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1 auto;
+              flex: 1 1 auto;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+              justify-content: center;
+      -webkit-align-self: center;
+              align-self: center;
+      -webkit-align-items: center;
+              align-items: center;
+      gap: 2vw;
+    }
+    .who-we-are .box-desc .profiles {
+      display: flex;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1 auto;
+              flex: 1 1 auto;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+              justify-content: center;
+      -webkit-align-self: center;
+              align-self: center;
+      -webkit-align-items: center;
+              align-items: center;
+      gap: 3vw;
+    }
+    .who-we-are .box-desc .textbox-special {
+      display: flex;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1 auto;
+              flex: 1 1 auto;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+              justify-content: center;
+      -webkit-align-self: center;
+              align-self: center;
+      -webkit-align-items: center;
+              align-items: center;
+      gap: 3vw;
+      background-color: rgb(30,30,30); /* Fallback color */
+      background-color: rgba(30,30,30, 0.5);
+      border: 1px solid #000;
+      border-radius: 44px;
+      z-index: 2;
+      padding: 3vh 3vw 3vh;
+      text-align: center;
+      box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+      font-size: 1vw;
+    }
+    .who-we-are .cs-member {
+        display: flex;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 auto;
+                flex: 1 1 auto;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+                justify-content: center;
+        -webkit-align-self: center;
+                align-self: center;
+        -webkit-align-items: center;
+                align-items: center;
+        gap: 1.5vw;
+    }
+    .who-we-are .cs-member .cs-member-pp {
+        background-color: #00000000;
+        color: inherit;
+        width: 5vw;
+        height: 5vw;
+        background-size: 5vw;
+        border: 1px solid #000;
+        border-radius: 100px;
+        box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+        box-shadow: inset 0 0 0 1000px rgba(30, 30, 30,.8);
+    }
+    .who-we-are .cs-member .cs-member-pp:hover {
+        width: 5vw;
+        height: 5vw;
+        background-size: 5vw;
+        border: 1px solid #000;
+        border-radius: 100px;
+        box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+    }
+    .who-we-are .cs-member .cs-member-pp:focus {
+        width: 5vw;
+        height: 5vw;
+        background-size: 5vw;
+        border: 1px solid #000;
+        border-radius: 100px;
+        box-shadow: 0px 0px 1.5vw #0acf0acc;
+    }
+    .who-we-are .cs-member .cs-member-pseudo {
+        background-color: rgb(30,30,30); /* Fallback color */
+        background-color: rgba(30,30,30, 0.5);
+        border: 1px solid #000;
+        border-radius: 44px;
+        z-index: 2;
+        padding: 1.5vh 1.5vw 1.5vh;
+        text-align: center;
+        box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+        font-size: 0.8vw;
+    }
+    .who-we-are .box-desc .textbox-github {
+        position: relative;
+      display: flex;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1 auto;
+              flex: 1 1 auto;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+              justify-content: center;
+      -webkit-align-self: center;
+              align-self: center;
+      -webkit-align-items: start;
+              align-items: flex-start;
+      gap: 1.5vw;
+      background-color: rgb(30,30,30); /* Fallback color */
+      background-color: rgba(30,30,30, 0.5);
+      border: 1px solid #000;
+      border-radius: 54px;
+      z-index: 2;
+      padding: 3vh 2vw 3vh;
+      text-align: left;
+      box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+    }
+    .who-we-are .github-name {
+      display: flex;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1 auto;
+              flex: 1 1 auto;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+              justify-content: center;
+      -webkit-align-items: center;
+              align-items: center;
+      gap: 1vw;
+      font-size: 1.1vw;
+      font-weight: 600;
+    }
+    .lang-github {
+        display: flex;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 auto;
+                flex: 1 1 auto;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+                justify-content: center;
+        -webkit-align-items: center;
+                align-items: center;
+        gap: 0.5vw;
+      }
+    .who-we-are .public-tag {
+      background-color: rgb(30,30,30); /* Fallback color */
+      background-color: rgba(30,30,30, 0.5);
+      border: 1px solid #000;
+      border-radius: 44px;
+      text-align: center;
+      font-size: 0.7vw;
+      font-weight: 300 !important;
+      padding: 0.9vh 0.9vw 0.9vh;
+      box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+    }
+    .who-we-are .github-desc, .lang-github {
+      font-size: 0.8vw;
+    }
+    .who-we-are .icon-github {
+        width: 1vw;
+        height: 1.3vw;
+        background-size: 1vw;
+        background-repeat: no-repeat;
+        background-image: url("../../images/icon-repo.png");
+    }
+    .who-we-are .lang-dot {
+        background-color: #0ACF0A;
+        width: 0.8vw;
+        height: 0.8vw;
+        border-radius: 100%;
+    }
+    .who-we-are .github-btn {
+        display: flex;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1 1 auto;
+                flex: 1 1 auto;
+        -webkit-align-self: center;
+                align-self: center;
+        position: absolute;
+        bottom: -3vh;
+    }
+
+.news-blog {
+    width: 80vw;
+    position: absolute;
+    top: 460%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 auto;
+            flex: 1 1 auto;
+    display: flex;
+    gap: 4vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-align-self: center;
+            align-self: center;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-animation: fadein 4s;
+            animation: fadein 4s; }
+    .news-blog .box-desc {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1 1 auto;
+              flex: 1 1 auto;
+      display: flex;
+      gap: 3vw;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: center;
+      -webkit-justify-content: center;
+              justify-content: center;
+      -webkit-align-self: center;
+              align-self: center;
+      -webkit-align-items: center;
+              align-items: center;
+      width: 80%; }
+
+footer {
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-self: center;
+          align-self: center;
+  -webkit-align-items: center;
+          align-items: center;
+  gap: 2vw;
+  padding: 2vw;
+  line-height: 1.5;
+  -webkit-animation: fadein 8s;
+          animation: fadein 8s;
+}
+
+.credit p.contact {
+  font-size: 1vw;
+  font-weight: 200;
+  line-height: 1.5;
+  margin-bottom: 0;
+  opacity: 0.7;
+  text-align: center; }
+
+.credit .copyright {
+font-size: 1vw;
+opacity: 0.4; }
