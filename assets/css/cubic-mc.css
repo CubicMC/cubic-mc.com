@@ -280,7 +280,7 @@ body.section-page {
 .about {
   width: 60vw;
   position: absolute;
-  top: 160%;
+  top: 155%;
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-box-flex: 1;
@@ -309,7 +309,7 @@ body.section-page {
 .release {
   width: 80vw;
   position: absolute;
-  top: 260%;
+  top: 255%;
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-box-flex: 1;
@@ -356,7 +356,7 @@ body.section-page {
 .roadmap {
     width: 60vw;
     position: absolute;
-    top: 360%;
+    top: 355%;
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-box-flex: 1;
@@ -386,7 +386,7 @@ body.section-page {
 .who-we-are {
   width: 80vw;
   position: absolute;
-  top: 460%;
+  top: 455%;
   left: 50%;
   transform: translate(-50%, -50%);
   -webkit-box-flex: 1;
@@ -646,7 +646,7 @@ body.section-page {
 .news-blog {
     width: 80vw;
     position: absolute;
-    top: 560%;
+    top: 555%;
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-box-flex: 1;
