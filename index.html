@@ -78,9 +78,26 @@
                 <div class="bg-image" style="background-image: url(images/logo.png);"></div>
                 <div class="roadmap">
                     <h1>Roadmap</h1>
-                        <div class="box-desc">
-                            <div class="textbox">
-                                
+                    <div class="box-desc">
+                        <div class="textbox">
+                            <p class="eip-sprint-desc" id="eip-sprint-desc">Click on a period of time to see details about it.</p>
+                            <div class="eip-roadmap">
+                                <div class="sprints">
+                                    <button class="eip-sprint" id="beta-growth-hacking" onclick="document.getElementById('eip-sprint-desc').innerHTML='For now, we developed an alpha version of the project, available in the Releases section.</br> At the end of this period, we expect to release a beta version of Cubic Server.'"><span class="sprint-date">Feb 2023 - May 2023</span></br></br>Beta & Growth Hacking</button>
+                                    <button class="eip-release" id="beta-release" onclick="document.getElementById('eip-sprint-desc').innerHTML='Around June 2023, we are to release a beta version of Cubic Server.'"><span>Beta Release</span></button>
+                                    <button class="eip-sprint" id="consolidation" onclick="document.getElementById('eip-sprint-desc').innerHTML='After launching the beta, we plan to consolidate the project thanks to the feedback we will receive from our beta-testers.'"><span class="sprint-date">June 2023 - Sep 2023</span></br></br><span>Consolidation</span></button>
+                                    <button class="eip-release" id="consolidation-release" onclick="document.getElementById('eip-sprint-desc').innerHTML='More details about this release are to be added in the future.'"><span>New Release</span></button>
+                                    <button class="eip-sprint" id="launch-metrics" onclick="document.getElementById('eip-sprint-desc').innerHTML='This last period of time will be used to refine the last details of Cubic Server.'"><span class="sprint-date">Oct 2023 - Dec 2023</span></br></br><span>Launch & Metrics</span></button>
+                                    <button class="eip-release" id="launch-metrics-release" onclick="document.getElementById('eip-sprint-desc').innerHTML='At the end of this period, we expect to launch the first final version of Cubic Server.'"><span>Launching</span></button>
+                                </div>
+                                <div class="end-roadmap">
+                                    <div class="end-roadmap-div" id="end-roadmap-1"></div>
+                                    <div class="end-roadmap-div" id="end-roadmap-2"></div>
+                                    <div class="end-roadmap-div" id="end-roadmap-3"></div>
+                                    <div class="end-roadmap-div" id="end-roadmap-4"></div>
+                                </div>
+                                <!-- <div class="roadmap-arrow"></div> -->
+                            </div>
                         </div>
                     </div>
                 </div>
