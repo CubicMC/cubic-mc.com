@@ -30,8 +30,9 @@
                 <button onclick="document.getElementById('home').scrollIntoView({ behavior: 'smooth' });">HOME</button>
                 <button onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' });">ABOUT</button>
                 <button onclick="document.getElementById('release').scrollIntoView({ behavior: 'smooth' });">NEXT RELEASE</button>
+                <button onclick="document.getElementById('roadmap').scrollIntoView({ behavior: 'smooth' });">ROADMAP</button>
                 <button onclick="document.getElementById('who-we-are').scrollIntoView({ behavior: 'smooth' });">WHO WE ARE</button>
-                <button onclick="document.getElementById('news-blog').scrollIntoView({ behavior: 'smooth' });">NEWS</button>
+                <!-- <button onclick="document.getElementById('news-blog').scrollIntoView({ behavior: 'smooth' });">NEWS</button> -->
                 <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">CONTACT</button>
             </div>
             <div class="page-content" id="home">
@@ -73,8 +74,36 @@
                     </div>
                 </div>
             </div>
-            <div class="page-content" id="who-we-are">
+            <div class="page-content" id="roadmap">
                 <div class="bg-image" style="background-image: url(images/logo.png);"></div>
+                <div class="roadmap">
+                    <h1>Roadmap</h1>
+                    <div class="box-desc">
+                        <div class="textbox">
+                            <p class="eip-sprint-desc" id="eip-sprint-desc">Click on a period of time to see details about it.</p>
+                            <div class="eip-roadmap">
+                                <div class="sprints">
+                                    <button class="eip-sprint" id="beta-growth-hacking" onclick="document.getElementById('eip-sprint-desc').innerHTML='For now, we developed an alpha version of the project, available in the Releases section.</br> At the end of this period, we expect to release a beta version of Cubic Server.'"><span class="sprint-date">Feb 2023 - May 2023</span></br></br>Beta & Growth Hacking</button>
+                                    <button class="eip-release" id="beta-release" onclick="document.getElementById('eip-sprint-desc').innerHTML='Around June 2023, we are to release a beta version of Cubic Server.'"><span>Beta Release</span></button>
+                                    <button class="eip-sprint" id="consolidation" onclick="document.getElementById('eip-sprint-desc').innerHTML='After launching the beta, we plan to consolidate the project thanks to the feedback we will receive from our beta-testers.'"><span class="sprint-date">June 2023 - Sep 2023</span></br></br><span>Consolidation</span></button>
+                                    <button class="eip-release" id="consolidation-release" onclick="document.getElementById('eip-sprint-desc').innerHTML='More details about this release are to be added in the future.'"><span>New Release</span></button>
+                                    <button class="eip-sprint" id="launch-metrics" onclick="document.getElementById('eip-sprint-desc').innerHTML='This last period of time will be used to refine the last details of Cubic Server.'"><span class="sprint-date">Oct 2023 - Dec 2023</span></br></br><span>Launch & Metrics</span></button>
+                                    <button class="eip-release" id="launch-metrics-release" onclick="document.getElementById('eip-sprint-desc').innerHTML='At the end of this period, we expect to launch the first final version of Cubic Server.'"><span>Launching</span></button>
+                                </div>
+                                <div class="end-roadmap">
+                                    <div class="end-roadmap-div" id="end-roadmap-1"></div>
+                                    <div class="end-roadmap-div" id="end-roadmap-2"></div>
+                                    <div class="end-roadmap-div" id="end-roadmap-3"></div>
+                                    <div class="end-roadmap-div" id="end-roadmap-4"></div>
+                                </div>
+                                <!-- <div class="roadmap-arrow"></div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-content" id="who-we-are">
+                <div class="bg-image" style="background-image: url(images/bckg1.png);"></div>
                 <div class="who-we-are">
                     <h1>Who we are</h1>
                     <div class="box-desc">
@@ -123,8 +152,8 @@
                     </div>
                 </div>
             </div>
-            <div class="page-content" id="news-blog">
-                <div class="bg-image" style="background-image: url(images/bckg1.png);"></div>
+            <!-- <div class="page-content" id="news-blog">
+                <div class="bg-image" style="background-image: url(images/logo.png);"></div>
                 <div class="news-blog">
                     <h1>News and Blog</h1>
                         <div class="box-desc">
@@ -146,16 +175,16 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </body>
 
     <footer class="credit" id="contact">
         <h3>Contact us</h3>
         <p class="contact">
-            Email : <a href="mailto:contact@cubic-server.com">contact@cubic-mc.com</a></br>GitHub Organization : <a href="https://github.com/CubicMC">CubicMC</a></p>
+            Email : <a href="mailto:contact@cubic-mc.com">contact@cubic-mc.com</a></br>GitHub Organization : <a href="https://github.com/CubicMC">CubicMC</a></p>
         </hr>
-        <p class="copyright">&copy;2022 <a href="#">CubicServer</a></p>
+        <p class="copyright">&copy;2023 <a href="#">CubicServer</a></p>
     </footer>
 
 </html>
