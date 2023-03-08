@@ -938,7 +938,7 @@
 
     .credit .copyright {
     font-size: 1vw;
-    opacity: 0.4; }
+    opacity: 0.6; }
 }
 
 /* -- Portrait - Mobile ver. -- */
@@ -1858,5 +1858,5 @@
 
     .credit .copyright {
     font-size: 1vh;
-    opacity: 0.4; }
+    opacity: 0.6; }
 }
