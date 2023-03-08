@@ -1829,34 +1829,43 @@
         -webkit-box-pack: center;
         -webkit-justify-content: center;
                 justify-content: center;
-        -webkit-align-self: center;
-                align-self: center;
+        -webkit-align-self: flex-start;
+                align-self: flex-start;
         -webkit-align-items: center;
                 align-items: center;
-        gap: 2vw;
+        gap: 3vh;
+        margin-left: 22vw;
         line-height: 1.5;
     }
 
     .v-div {
         background-color: #FFFFFF;
         width: .05vw;
-        height: 10vh;
+        height: 15vh;
     }
 
     i {
-        width: 1vh;
-        height: auto;
+        font-size: 2vh;
+        width: 2vh;
+        height: 2vh;
     }
 
     .credit p.contact {
-    font-size: 1vh;
-    font-weight: 200;
-    line-height: 1.5;
-    margin-bottom: 0;
-    opacity: 0.7;
+        font-size: 1vh;
+        font-weight: 200;
+        line-height: 1;
+        margin-bottom: 1vh;
+        opacity: 0.7;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
     }
 
     .credit .copyright {
+    margin-top: 1vh;
     font-size: 1vh;
     opacity: 0.6; }
 }
