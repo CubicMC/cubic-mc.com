@@ -1560,7 +1560,8 @@
                 align-self: center;
         -webkit-align-items: center;
                 align-items: center;
-        gap: 3vw;
+        flex-wrap: wrap;
+        gap: 8vw;
         }
         .who-we-are .box-desc .textbox-special {
         display: flex;
@@ -1587,7 +1588,7 @@
         padding: 3vw 3vh 3vw;
         text-align: center;
         box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
-        font-size: 1vh;
+        font-size: 1.3vh;
         }
         .who-we-are .cs-member {
             display: flex;
@@ -1610,26 +1611,26 @@
         .who-we-are .cs-member .cs-member-pp {
             background-color: #00000000;
             color: inherit;
-            width: 5vh;
-            height: 5vh;
-            background-size: 5vh;
+            width: 7vh;
+            height: 7vh;
+            background-size: 7vh;
             border: 1px solid #000;
             border-radius: 50px;
             box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
             box-shadow: inset 0 0 0 1000px rgba(30, 30, 30,.8);
         }
         .who-we-are .cs-member .cs-member-pp:hover {
-            width: 5vh;
-            height: 5vh;
-            background-size: 5vh;
+            width: 7vh;
+            height: 7vh;
+            background-size: 7vh;
             border: 1px solid #000;
             border-radius: 50px;
             box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
         }
         .who-we-are .cs-member .cs-member-pp:focus {
-            width: 5vh;
-            height: 5vh;
-            background-size: 5vh;
+            width: 7vh;
+            height: 7vh;
+            background-size: 7vh;
             border: 1px solid #000;
             border-radius: 100px;
             box-shadow: 0px 0px 1.5vw #0acf0acc;
@@ -1643,52 +1644,53 @@
             padding: 1.5vw 1vh 1.5vw;
             text-align: center;
             box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
-            font-size: 0.8vh;
+            font-size: 2.5vw;
         }
         .who-we-are .box-desc .textbox-github {
             position: relative;
-        display: flex;
-        -webkit-box-flex: 1;
-        -webkit-flex: 1 1 auto;
-                flex: 1 1 auto;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: column;
-                flex-direction: column;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-                justify-content: center;
-        -webkit-align-self: center;
-                align-self: center;
-        -webkit-align-items: start;
-                align-items: flex-start;
-        gap: 1.5vw;
-        background-color: rgb(30,30,30); /* Fallback color */
-        background-color: rgba(30,30,30, 0.5);
-        border: 1px solid #000;
-        border-radius: 15px;
-        z-index: 2;
-        padding: 1.5vh 4vw;
-        text-align: left;
-        box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+            display: flex;
+            -webkit-box-flex: 1;
+            -webkit-flex: 1 1 auto;
+                    flex: 1 1 auto;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+                    justify-content: center;
+            -webkit-align-self: center;
+                    align-self: center;
+            -webkit-align-items: start;
+                    align-items: flex-start;
+            gap: 1.5vw;
+            background-color: rgb(30,30,30); /* Fallback color */
+            background-color: rgba(30,30,30, 0.5);
+            border: 1px solid #000;
+            border-radius: 15px;
+            z-index: 2;
+            padding: 1.5vh 4vw;
+            text-align: left;
+            box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+            font-size: 1.2vh;
         }
         .who-we-are .github-name {
-        display: flex;
-        -webkit-box-flex: 1;
-        -webkit-flex: 1 1 auto;
-                flex: 1 1 auto;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-        -webkit-flex-direction: row;
-                flex-direction: row;
-        -webkit-box-pack: center;
-        -webkit-justify-content: center;
-                justify-content: center;
-        -webkit-align-items: center;
-                align-items: center;
-        gap: 1vw;
-        font-size: 1.1vh;
-        font-weight: 600;
+            display: flex;
+            -webkit-box-flex: 1;
+            -webkit-flex: 1 1 auto;
+                    flex: 1 1 auto;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: row;
+                    flex-direction: row;
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+                    justify-content: center;
+            -webkit-align-items: center;
+                    align-items: center;
+            gap: 1vw;
+            font-size: 1.2vh;
+            font-weight: 600;
         }
         .lang-github {
             display: flex;
@@ -1705,6 +1707,7 @@
             -webkit-align-items: baseline;
                     align-items: baseline;
             gap: 0.5vw;
+            font-size: 1.1vh;
         }
         .who-we-are .public-tag {
         background-color: rgb(30,30,30); /* Fallback color */
@@ -1712,13 +1715,10 @@
         border: 1px solid #000;
         border-radius: 8px;
         text-align: center;
-        font-size: 0.7vh;
+        font-size: 0.9vh;
         font-weight: 300 !important;
-        padding: 1.2vw 0.9vh 0.9vw;
+        padding: 1.4vw 0.9vh 0.9vw;
         box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
-        }
-        .who-we-are .github-desc, .lang-github {
-        font-size: 0.8vh;
         }
         .who-we-are .icon-github {
             width: 1vh;
@@ -1741,7 +1741,7 @@
             -webkit-align-self: center;
                     align-self: center;
             position: absolute;
-            bottom: -1vh;
+            bottom: -1.5vh;
             color: #000;
         }
 
