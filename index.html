@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
         <!-- SEO -->
-        <title>CubicServer</title>
+        <title id="CubicServer">Cubic Server</title>
         <meta name="description" content="CubicServer is part of the game world as the Minecraft server creation solution for individuals and businesses. It is an ambitious project that promises its users performance and ease of use, through its simplified and optimized technical environment, but also through its extensibility through a plugin system." />
         <meta name="robots" content="robots.txt" />
         <meta name="referrer" content="always" />
@@ -16,7 +16,7 @@
         <meta property="og:description" content="CubicServer is part of the game world as the Minecraft server creation solution for individuals and businesses. It is an ambitious project that promises its users performance and ease of use, through its simplified and optimized technical environment, but also through its extensibility through a plugin system." />
 
         <!-- Favicon -->
-        <link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32" id="CubicServer-favicon">
 
         <!-- Styles -->
         <link rel='stylesheet' href='assets/css/cubic-mc.css' type='text/css' media='screen' />
@@ -25,31 +25,31 @@
 
     </head>
 
-    <body id="fullsingle" class="section-page">
+    <body id="minecraft-cubicserver" class="section-page">
         <div class="fs-cubic-mc">
             <div class="nav-bar">
-                <button onclick="document.getElementById('home').scrollIntoView({ behavior: 'smooth' });">HOME</button>
-                <button onclick="document.getElementById('about').scrollIntoView({ behavior: 'smooth' });">ABOUT</button>
-                <button onclick="document.getElementById('release').scrollIntoView({ behavior: 'smooth' });">NEXT RELEASE</button>
-                <button onclick="document.getElementById('roadmap').scrollIntoView({ behavior: 'smooth' });">ROADMAP</button>
+                <button onclick="document.getElementById('home-cubic-server').scrollIntoView({ behavior: 'smooth' });">HOME</button>
+                <button onclick="document.getElementById('about-cubic-server').scrollIntoView({ behavior: 'smooth' });">ABOUT</button>
+                <button onclick="document.getElementById('release-cubic-server').scrollIntoView({ behavior: 'smooth' });">NEXT RELEASE</button>
+                <button onclick="document.getElementById('roadmap-cubic-server').scrollIntoView({ behavior: 'smooth' });">ROADMAP</button>
                 <button onclick="document.getElementById('who-we-are').scrollIntoView({ behavior: 'smooth' });">WHO WE ARE</button>
                 <!-- <button onclick="document.getElementById('news-blog').scrollIntoView({ behavior: 'smooth' });">NEWS</button> -->
                 <button onclick="document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });">CONTACT</button>
             </div>
-            <div class="page-content" id="home">
-                <div class="bg-image" style="background-image: url(images/bckg1.webp);"></div>
+            <div class="page-content" id="home-cubic-server">
+                <div class="bg-image" style="background-image: url(images/bckg1.webp);" alt="Minecraft landscape, Cubic Server map"></div>
                 <div class="logo">
                     <p>CUBIC</p>
                     <img src="images/logo.webp" alt="Cubic Server's Logo" />
                     <p>SERVER</p>
                 </div>
             </div>
-            <div class="page-content" id="about">
-                <div class="bg-image" style="background-image: url(images/bckg1.webp);"></div>
+            <div class="page-content" id="about-cubic-server">
+                <div class="bg-image" style="background-image: url(images/bckg1.webp);" alt="Minecraft landscape, Cubic Server map"></div>
                 <div class="about">
                     <h1>About Cubic Server</h1>
                         <div class="box-desc">
-                            <div class="textbox">
+                            <div class="textbox" id="CubicServer-desc">
                                 <p>CubicServer is part of the game world as the Minecraft server creation solution for individuals and businesses. It is an ambitious project that promises its users performance and ease of use, through its simplified and optimized technical environment, but also through its extensibility through a plugin system.
                                 </br></br>Carried out by six Epitech students as a graduation project, the goal of CubicServer will be to offer an optimized server without limits, to allow players around the world to give free rein to their imagination within a expanded community.</p>
                                 <button onclick="document.getElementById('who-we-are').scrollIntoView();">See who we are</button>
@@ -57,15 +57,15 @@
                     </div>
                 </div>
             </div>
-            <div class="page-content" id="release">
-                <div class="bg-image" style="background-image: url(images/bckg1.webp);"></div>
+            <div class="page-content" id="release-cubic-server">
+                <div class="bg-image" style="background-image: url(images/bckg1.webp);" alt="Minecraft landscape, Cubic Server map"></div>
                 <div class="release">
                     <h1>Next Release</h1>
                         <div class="box-desc">
                             <div class="textbox">
                                 <h2>Current Release</h2>
                                 <p>v0.1.0-alpha</p>
-                                <button onclick="location.href = 'https\:\/\/github.com/CubicMC/cubic-server/releases/latest';">See download</button>
+                                <button id="CubicMC-github-release" onclick="location.href = 'https\:\/\/github.com/CubicMC/cubic-server/releases/latest';">See download</button>
                         </div>
                         <div class="textbox">
                             <h2>Next Release</h2>
@@ -75,8 +75,8 @@
                     </div>
                 </div>
             </div>
-            <div class="page-content" id="roadmap">
-                <div class="bg-image" style="background-image: url(images/bckg1.webp);"></div>
+            <div class="page-content" id="roadmap-cubic-server">
+                <div class="bg-image" style="background-image: url(images/bckg1.webp);" alt="Minecraft landscape, Cubic Server map"></div>
                 <div class="roadmap">
                     <h1>Roadmap</h1>
                     <div class="box-desc">
@@ -104,7 +104,7 @@
                 </div>
             </div>
             <div class="page-content" id="who-we-are">
-                <div class="bg-image" style="background-image: url(images/bckg1.webp);"></div>
+                <div class="bg-image" style="background-image: url(images/bckg1.webp);" alt="Minecraft landscape, Cubic Server map"></div>
                 <div class="who-we-are">
                     <h1>Who we are</h1>
                     <div class="box-desc">
@@ -154,7 +154,7 @@
                 </div>
             </div>
             <!-- <div class="page-content" id="news-blog">
-                <div class="bg-image" style="background-image: url(images/bckg1.webp);"></div>
+                <div class="bg-image" style="background-image: url(images/bckg1.webp);" alt="Minecraft landscape, Cubic Server map"></div>
                 <div class="news-blog">
                     <h1>News and Blog</h1>
                         <div class="box-desc">
